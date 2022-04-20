@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    </style>
+    <title>PlaystationFlix</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="left">
+                <nav>
+                    <div class="logo-menu">
+                        <div class="logo">PSFlix</div>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+                    </div>
+                    <div class="menu-lista" id="menu-lista">
+                        <a id="active" href="#">Início</a>
+                        <a href="#novos">Novos</a>
+                        <a href="#embreve">Em breve</a>
+                        <a href="#bombando">Bombando</a>
+                        <a href="#minhalista">Minha lista</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="right">
+                <div class="search"><img src="assets/images/search.svg" alt=""></div>
+                <div class="notificacao"><img src="assets/images/notifications-button.png" alt="" srcset=""></div>
+                <div class="user"><img src="assets/images/perfil.png" alt=""></div>
+            </div>
+
+        </div>
+    </header>
+    <img id="scrollUp" onclick="subir()" src="assets/images/pra-cima.png" alt="">
+    <div>
+        <div class="container">
+            <div class="container-button">
+                <button class="jogar">
+                    <img src="assets/images/play.svg" alt="" srcset="">
+                    <span>Jogar</span>
+                </button>
+                <button class="info">
+                    <img src="assets/images/info.svg" alt="">
+                    <span>Mais Informações</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="carrosel-games">
+        <span class="title-carousel" id="novos">Novos</span>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/ColdWar.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/EldenRing.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/FallGuys.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/Fortnite.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/Gostwire.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/Horizon.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Novos/StarWar.webp" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="carrosel-games">
+        <span class="title-carousel" id="embreve">Em breve</span>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/crash.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/GranTurismo.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/ItTakesTwo.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/Returnal.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/Sekiro.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/Sifu.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/EmBreve/Spider-Miles.webp" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="carrosel-games">
+        <span class="title-carousel" id="bombando">Bombando</span>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/alan-wake-remastered.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/among-us.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/dying-light-2.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/far-cry-6.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/kena-bridge-of-spirits.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/life-is-strange-true-colors1.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/resident-evil-village.jfif" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/Bombando/CyberPunk.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="carrosel-games">
+        <span class="title-carousel" id="minhalista">Minha lista</span>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/APlagueTale.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/Batman.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/GodOfWar.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/RedDeadRedemption2.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/Spider.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/Tlou2.webp" alt="">
+            </div>
+            <div class="item">
+                <img class="box-game" src="assets/images/MinhaLista/Tomb.webp" alt="">
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-link">
+                <a id="face" href="https://www.facebook.com/sergio.roberto.77" target="_blank"><img class="footer-image"
+                        src="assets/images/Facebook-Logo.png"></a>
+                <a id="git" href="https://github.com/sergiorbotelho" target="_blank"><img class="footer-image2"
+                        src="assets/images/logogit.png"></a>
+                <a id="linkedin" href="https://www.linkedin.com/in/sergio-botelhofilho" target="_blank"><img
+                        class="footer-image3" src="assets/images/logolink.png"></a>
+            </div>
+            <div class="footer-copy">Criado por Sérgio Botelho. Todos os diretos reservados</div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/setup.js"></script>
+</body>
+
+</html>
